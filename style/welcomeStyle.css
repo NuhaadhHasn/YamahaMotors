@@ -1,0 +1,50 @@
+.welcomePage {
+    background-color: black;
+    background-image: url(../images/yamaha_welcome_pic2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    text-shadow: -10px -1px 70px black;
+    text-decoration: none;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.heading {
+    font-size: 6em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background: url(../images/mt15_bike.png);
+    background-size: contain;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px #000;
+    animation: text 7.5s linear infinite;
+    outline: 1000px;
+}
+
+@keyframes text {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
+}

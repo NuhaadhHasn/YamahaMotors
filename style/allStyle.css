@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0 0;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+}
+
+h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+html {
+    scroll-padding-top: 4rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.clearFix {
+    clear: both;
+    float: none;
+}
+
+.imgCurve {
+    border-radius: 15px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.cardShadow {
+    box-shadow: 0 0 40px -10px #000;
+}

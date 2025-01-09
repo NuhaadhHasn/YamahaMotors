@@ -1,0 +1,89 @@
+body {
+    position: absolute;
+}
+
+.imgResponsive {
+    width: 100%;
+}
+
+.navBar {
+    height: 50px;
+    width: 100%;
+    background-color: #3482b5;
+    position: fixed;
+    overflow: visible;
+}
+
+/* Product List */
+
+.productList {
+    background-color: #1f1b24;
+    padding: 2% 0;
+    margin-top: 2%;
+    overflow: visible;
+}
+
+.productListBox {
+    width: 40%;
+    margin: 5%;
+    padding: 2%;
+    float: left;
+    background-color: rgb(42, 40, 46);
+}
+
+.productListImg {
+    width: 100%;
+    float: left;
+}
+
+.productListDesc {
+    width: 90%;
+    float: left;
+    margin-left: 8%;
+}
+
+.productPrice {
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+
+.productDetail {
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+.aboutUs {
+    background-color: #1f1b24;
+    margin: 8% 0% 2% 0%;
+    padding: 2% 0;
+    overflow: visible;
+}
+
+.aboutUs img {
+    padding: 5% 5%;
+}
+
+.aboutUs .imgContainer {
+    background-color: #302d3d;
+    margin: 3% 10%;
+}
+
+.aboutUs p {
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .navBar .navBtn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .navBar #navCheck:checked ~ .navLinks {
+        height: 200px;
+        overflow-y: auto;
+    }
+
+    /* Logo */
+}

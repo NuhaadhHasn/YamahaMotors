@@ -1,0 +1,99 @@
+.navBar .logo {
+    display: inline;
+}
+
+.navBar .logo .logoTitle {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    -webkit-text-stroke: 0.3px black;
+    padding: 10px;
+}
+.navBar .navBtn {
+    display: none;
+}
+
+.navBar .navLinks {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.navBar .navLinks a {
+    display: inline-block;
+    padding: 13px 10px 13px 1px;
+    text-decoration: none;
+    color: #efefef;
+    font-weight: bold;
+}
+
+.navBar .navLinks a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navBar #navCheck {
+    display: none;
+}
+
+.navBar .logoImg {
+    height: 77px;
+    margin: -24px;
+    position: absolute;
+}
+
+@media (max-width: 800px) {
+    .navBar .navBtn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .navBar .navBtn label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .navBar .navBtn label:hover,
+    .navBar #navCheck:checked ~ .navBtn label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .navBar .navBtn label span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .navBar .navLinks {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .navBar .navLinks a {
+        display: block;
+        width: 100%;
+    }
+
+    .navBar #navCheck:not(:checked) ~ .navLinks {
+        height: 0px;
+    }
+
+    @media (max-width: 300px) {
+        .navBar .logoImg {
+            display: none;
+            margin: -24px;
+        }
+    }
+}

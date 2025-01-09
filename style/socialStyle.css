@@ -1,0 +1,15 @@
+.social ul li {
+    display: inline;
+    padding: 1%;
+    font-weight: bolder;
+}
+
+.footer {
+    padding-left: 15px;
+}
+
+.footer p {
+    color: white;
+    font-weight: bolder;
+    padding-bottom: 2%;
+}
